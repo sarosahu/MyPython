@@ -1,0 +1,11 @@
+1) Why should you not use "import *" syntax in a file ?
+
+Ans:
+
+When we explicitly import the database class at the top of our file using from database import Database, we can easily see where the Database class comes from. We might use db = Database() 400 lines later in the file, and we can quickly look at the imports to see where that Database class came from. Then, if we need clarification as to how to use the Database class, we can visit the original file (or import the module in the interactive interpreter and use the help(database.Database) command). However, if we use the from database import * syntax, it takes a lot longer to find where that class is located. Code maintenance becomes a nightmare.
+
+In addition, most code editors are able to provide extra functionality, such as reliable code completion, the ability to jump to the definition of a class, or inline documentation, if normal imports are used. The import * syntax usually completely destroys their ability to do this reliably.
+
+Finally, using the import * syntax can bring unexpected objects into our local namespace. Sure, it will import all the classes and functions defined in the module being imported from, but it will also import any classes or modules that were themselves imported into that file!
+
+2)
