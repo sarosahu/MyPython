@@ -1,0 +1,3 @@
+This case study is about creating a notebook application where an user can add notes to a notebook.
+
+In this design we will use menu interface in order to communicate to user, so that they can create notes, add notes, modify memos, add/modify tags and search for momo/tags.
